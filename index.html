@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Santa's List</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
+    />
+    <link rel="stylesheet" href="/app.css" />
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <img alt="Santa's List" src="./santas-list.jpg" height="420px" />
+      <h1>Manage your preferences for Santa's List</h1>
+      <p>
+        All Christians are automatically enrolled in Santa's List at birth.
+        There is no monetary cost to being a member of His list, but if you wish
+        to opt-out, you may do so here.
+      </p>
+      <form>
+        <ul>
+          <li>
+            <label class="flex items-baseline">
+              <input name="naughty-or-nice" type="checkbox" checked />
+              <div class="ml2">
+                <p class="bold f4 mb1 b">Naughty or Nice Yearly</p>
+                <p class="i mt0">
+                  Checked throughly (at least twice) every year on December 25th
+                  of the Gregorian calendar. Members of this list will receive a
+                  parcel of His choosing before the next day's dawn, free of
+                  charge.
+                </p>
+              </div>
+            </label>
+          </li>
+        </ul>
+        <button type="submit">Save preferences</button>
+      </form>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
